@@ -34,7 +34,7 @@ export const INTERVIEW_TYPES: TInterviewType[] = [{
   description: 'Строим вместе дом, спасаемся от гриферов.',
 }, {
   id: 'blitz',
-  image: '⚡',
+  image: '⚡️',
   title: 'Блиц-собеседование',
   description: 'Фанат Флеша? Вопросы быстры, ответы еще быстрее.',
 }, {
