@@ -5,8 +5,8 @@ import { Typography } from 'components/Typography';
 
 import { useScrollTo } from 'shared/react';
 
-import imageSpace307 from 'assets/space307.svg';
-import imageDataDuck from 'assets/dataduck.svg';
+import imageSpace307 from './assets/space307.svg';
+import imageDataDuck from './assets/dataduck.svg';
 
 import styles from './Main.module.css';
 

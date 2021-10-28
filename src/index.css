@@ -95,12 +95,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-alpha);
-  background-image: url('./assets/bg-overlay.png');
-  background-attachment: fixed;
-  background-position: center;
+  background-image: url('./assets/falling-money.png'), url('./assets/bg-overlay.png');
+  background-attachment: scroll, fixed;
+  background-position: top center, center;
   background-repeat: no-repeat;
-  background-size: cover;
-  scroll-behavior: smooth;
+  background-size: contain, cover;
 }
 
 code {

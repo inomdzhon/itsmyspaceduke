@@ -6,9 +6,9 @@
   height: 100vh;
   padding: 40px 16px;
   box-sizing: border-box;
-  background-image: url('../../assets/falling-money.png'), url('../../assets/incognito-man.png');
+  background-image: url('./assets/incognito-man.png');
   background-repeat: no-repeat;
-  background-size: cover, contain;
+  background-size: contain;
   background-position: center;
 }
 

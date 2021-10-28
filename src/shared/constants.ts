@@ -1,4 +1,8 @@
-export const INTERVIEW_TYPES = [{
+import type { TInterviewType } from './types';
+
+export const BOT_LINK = 'https://t.me/spaceduke_bot';
+
+export const INTERVIEW_TYPES: TInterviewType[] = [{
   id: 'alcho',
   image: '🍺',
   title: 'Алко-собеседование',

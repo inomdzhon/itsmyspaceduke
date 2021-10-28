@@ -4,10 +4,6 @@
   flex-direction: column;
 }
 
-.award {
-  margin-bottom: 24px;
-}
-
 .container {
   position: relative;
   z-index: 0;
@@ -28,39 +24,44 @@
   filter: blur(30px);
 }
 
-.winner {
-  position: absolute;
-  z-index: 3;
-  bottom: 11%; /* 42/386 */
-  left: 50%;
-  width: 65%; /* 186/288 */
-  height: 10%; /* 40/386 */
-  transform: translateX(-50%);
-}
-
-.stonesContainer {
-  display: flex;
+.itemsContainer {
   position: absolute;
   z-index: 1;
   top: 6%; /* 24/386 */
-  left: 14%;
-  justify-content: center;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
   width: 72%; /* 208/288 */
   height: 60%; /* 232/386 */
   overflow: hidden;
   background-image: linear-gradient(180deg, #151518 0.24%, #1B1B1F 17.37%, #18191C 70.35%, #151519 102.99%);
 }
 
-.stones {
-  left: 0;
-  width: 88px;
+.itemsContainer_spinner {
+  z-index: 2;
 }
 
-.stone {
+.items {
+  margin-right: auto;
+  margin-left: auto;
+  width: 88px;
+  transition: transform 500ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.itemsContainer_spinner .items {
+  transition: none;
+  animation-name: animation-spin;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 10;
+}
+
+.item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 88px;
+  width: 100%;
   font-size: 56px;
   line-height: 88px;
   height: 88px;
@@ -117,4 +118,14 @@
   cursor: not-allowed;
   pointer-events: initial;
   color: rgb(var(--warning-alpha-rgb), 0.2);
+}
+
+@keyframes animation-spin {
+  from {
+    transform: translateY(-18px);
+  }
+
+  to {
+    transform: translateY(-720px);
+  }
 }
