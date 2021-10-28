@@ -1,0 +1,109 @@
+@import-normalize; /* bring in normalize.css styles */
+
+:root {
+  --corner-radius-alpha: 12px;
+  --corner-radius-beta: 8px;
+  --corner-radius-gamma: 2px;
+  --border: #203146;
+  --border-rgb: 32, 49, 70;
+  --border-rgba: rgba(32, 49, 70, 0);
+  --button-contrast-gamma: #000;
+  --button-contrast-gamma-rgb: 0, 0, 0;
+  --button-contrast-gamma-rgba: rgba(0, 0, 0, 1);
+  --button-contrast-alpha: #fff;
+  --button-contrast-alpha-rgb: 255, 255, 255;
+  --button-contrast-alpha-rgba: rgba(255, 255, 255, 1);
+  --contrast-gamma: #5b728c;
+  --contrast-gamma-rgb: 91, 114, 140;
+  --contrast-gamma-rgba: rgba(91, 114, 140, 1);
+  --contrast-beta: #a5bdd9;
+  --contrast-beta-rgb: 165, 189, 217;
+  --contrast-beta-rgba: rgba(165, 189, 217, 1);
+  --contrast-alpha: #fff;
+  --contrast-alpha-rgb: 255, 255, 255;
+  --contrast-alpha-rgba: rgba(255, 255, 255, 1);
+  --high-gamma: #253850;
+  --high-gamma-rgb: 37, 56, 80;
+  --high-gamma-rgba: rgba(37, 56, 80, 1);
+  --high-beta: #2f4765;
+  --high-beta-rgb: 47, 71, 101;
+  --high-beta-rgba: rgba(47, 71, 101, 1);
+  --high-alpha: #2a405b;
+  --high-alpha-rgb: 42, 64, 91;
+  --high-alpha-rgba: rgba(42, 64, 91, 1);
+  --base-gamma: #1c2a3b;
+  --base-gamma-rgb: 28, 42, 59;
+  --base-gamma-rgba: rgba(28, 42, 59, 1);
+  --base-beta: #253850;
+  --base-beta-rgb: 37, 56, 80;
+  --base-beta-rgba: rgba(37, 56, 80, 1);
+  --base-alpha: #203146;
+  --base-alpha-rgb: 32, 49, 70;
+  --base-alpha-rgba: rgba(32, 49, 70, 1);
+  --bg-gamma: #131e2a;
+  --bg-gamma-rgb: 19, 30, 42;
+  --bg-gamma-rgba: rgba(19, 30, 42, 1);
+  --bg-beta: #1c2a3b;
+  --bg-beta-rgb: 28, 42, 59;
+  --bg-beta-rgba: rgba(28, 42, 59, 1);
+  --bg-alpha: #172331;
+  --bg-alpha-rgb: 23, 35, 49;
+  --bg-alpha-rgba: rgba(23, 35, 49, 1);
+  --negative-gamma: #e1310f;
+  --negative-gamma-rgb: 225, 49, 15;
+  --negative-gamma-rgba: rgba(225, 49, 15, 1);
+  --negative-beta: #f47961;
+  --negative-beta-rgb: 244, 121, 97;
+  --negative-beta-rgba: rgba(244, 121, 97, 1);
+  --negative-alpha: #f15131;
+  --negative-alpha-rgb: 241, 81, 49;
+  --negative-alpha-rgba: rgba(241, 81, 49, 1);
+  --warning-gamma: #ee9f07;
+  --warning-gamma-rgb: 238, 159, 7;
+  --warning-gamma-rgba: rgba(238, 159, 7, 1);
+  --warning-alpha: #f9b42e;
+  --warning-alpha-rgb: 249, 180, 46;
+  --warning-alpha-rgba: rgba(249, 180, 46, 1);
+  --warning-beta: #fac661;
+  --warning-beta-rgb: 250, 198, 97;
+  --warning-beta-rgba: rgba(250, 198, 97, 1);
+  --positive-gamma: #18955b;
+  --positive-gamma-rgb: 24, 149, 91;
+  --positive-gamma-rgba: rgba(24, 149, 91, 1);
+  --positive-beta: #35df90;
+  --positive-beta-rgb: 53, 223, 144;
+  --positive-beta-rgba: rgba(53, 223, 144, 1);
+  --positive-alpha: #1fbf75;
+  --positive-alpha-rgb: 31, 191, 117;
+  --positive-alpha-rgba: rgba(31, 191, 117, 1);
+  --accent-gamma: #0076cc;
+  --accent-gamma-rgb: 0, 118, 204;
+  --accent-gamma-rgba: rgba(0, 118, 204, 1);
+  --accent-beta: #33a9ff;
+  --accent-beta-rgb: 51, 169, 255;
+  --accent-beta-rgba: rgba(51, 169, 255, 1);
+  --accent-alpha: #0094ff;
+  --accent-alpha-rgb: 0, 148, 255;
+  --accent-alpha-rgba: rgba(0, 148, 255, 1);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-alpha);
+  background-image: url('./assets/bg-overlay.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

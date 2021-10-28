@@ -1,0 +1,125 @@
+.host {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: pre-line;
+}
+
+.host_has_nowrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.host_variant_h1Large {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.host_variant_h1 {
+  font-size: 27px;
+  line-height: 1.185;
+}
+
+.host_variant_h2 {
+  font-size: 21px;
+  line-height: 1.33;
+}
+
+.host_variant_text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.host_variant_textSmall {
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.host_variant_caption {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+
+.host_color_inherit {
+  color: currentColor;
+}
+
+.host_color_alpha {
+  color: var(--contrast-alpha);
+}
+
+.host_color_beta {
+  color: var(--contrast-beta);
+}
+
+.host_color_gamma {
+  color: var(--contrast-gamma)
+}
+
+.host_color_accent {
+  color: var(--accent-alpha)
+}
+
+.host_color_positive {
+  color: var(--positive-alpha)
+}
+
+.host_color_negative {
+  color: var(--negative-alpha)
+}
+
+.host_color_warning {
+  color: var(--warning-alpha)
+}
+
+.host_weight_bold {
+  font-weight: 700;
+}
+
+.host_weight_regular {
+  font-weight: 400;
+}
+
+.host_align_left {
+  text-align: start;
+}
+
+.host_align_center {
+  text-align: center;
+}
+
+.host_align_right {
+  text-align: end;
+}
+
+.host_has_verticalAlign {
+  display: inline-flex;
+}
+
+.host_align_left.host_has_verticalAlign {
+  justify-content: flex-start;
+}
+
+.host_align_center.host_has_verticalAlign {
+  justify-content: center;
+}
+
+.host_align_right.host_has_verticalAlign {
+  justify-content: flex-end;
+}
+
+.host_verticalAlign_top {
+  align-items: flex-start;
+}
+
+.host_verticalAlign_center {
+  align-items: center;
+}
+
+.host_verticalAlign_bottom {
+  align-items: flex-end;
+}

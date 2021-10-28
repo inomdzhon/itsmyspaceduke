@@ -1,0 +1,198 @@
+.host {
+  display: inline-flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--corner-radius-beta);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.host:focus {
+  outline: none;
+}
+
+.host:focus-visible::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  border: 1px solid var(--accent-alpha);
+  border-radius: calc(var(--corner-radius-beta) + 2px);
+  user-select: none;
+}
+
+/* Options */
+.hostHasFullWidth {
+  width: 100%;
+}
+
+/* Sizes */
+.hostSizeSmall {
+  /* haven't design */
+  padding: 6px 8px;
+}
+
+.hostSizeMedium {
+  min-height: 40px;
+  padding: 8px 16px;
+}
+
+.hostSizeLarge {
+  min-height: 48px;
+  padding: 12px 16px;
+}
+
+/* Variants */
+.hostVariantContained {
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.host:disabled,
+.host[disabled] {
+  border: 1px solid var(--border-rgba);
+  background-color: var(--base-alpha);
+  color: var(--contrast-gamma);
+}
+
+/* Colors relative to variant */
+.hostColorContainedDefault {
+  border: 1px solid var(--border-rgba);
+  background-color: var(--base-alpha);
+  color: var(--contrast-alpha);
+}
+
+@media (pointer: fine) {
+  .hostColorContainedDefault:hover {
+    background-color: var(--high-gamma);
+  }
+}
+
+.hostColorContainedDefault:active {
+  background-color: var(--bg-beta);
+}
+
+.hostColorContainedAccent {
+  border: 1px solid transparent;
+  background-color: var(--accent-alpha);
+  color: var(--button-contrast-alpha);
+}
+
+@media (pointer: fine) {
+  .hostColorContainedAccent:hover {
+    background-color: var(--accent-beta);
+  }
+}
+
+.hostColorContainedAccent:active {
+  background-color: var(--accent-gamma);
+}
+
+.hostColorContainedPositive {
+  border: 1px solid transparent;
+  background-color: var(--positive-alpha);
+  color: var(--button-contrast-alpha);
+}
+
+@media (pointer: fine) {
+  .hostColorContainedPositive:hover {
+    background-color: var(--positive-beta);
+  }
+}
+
+.hostColorContainedPositive:active {
+  background-color: var(--positive-gamma);
+}
+
+.hostColorContainedNegative {
+  border: 1px solid transparent;
+  background-color: var(--negative-alpha);
+  color: var(--button-contrast-alpha);
+}
+
+@media (pointer: fine) {
+  .hostColorContainedNegative:hover {
+    background-color: var(--negative-beta);
+  }
+}
+
+.hostColorContainedNegative:active {
+  background-color: var(--negative-gamma);
+}
+
+.hostColorContainedWarning {
+  border: 1px solid transparent;
+  background-color: var(--warning-gamma);
+  color: var(--button-contrast-gamma);
+}
+
+@media (pointer: fine) {
+  .hostColorContainedWarning:hover {
+    background-color: var(--warning-beta);
+  }
+}
+
+.hostColorContainedWarning:active {
+  background-color: var(--warning-gamma);
+}
+
+/* Elements */
+.itemContent {
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  width: 100%;
+}
+
+/**
+ * For case `props.textAlign === 'center'`
+ */
+.itemIconFake {
+  flex-grow: 1;
+  max-width: 36px; /* 24px (width) + 12px (gap) */
+  height: 24px;
+}
+
+.itemStartIcon {
+  display: inherit;
+  flex-shrink: 0;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding-inline-end: 12px;
+  font-size: 24px;
+}
+
+.itemTextAlignRight {
+  margin-inline-start: auto;
+  text-align: end;
+}
+
+.itemTextAlignCenter {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.itemTextAlignLeft {
+  margin-inline-end: auto;
+  text-align: start;
+}
+
+.itemEndIcon {
+  display: inherit;
+  flex-shrink: 0;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding-inline-start: 12px;
+  font-size: 24px;
+}

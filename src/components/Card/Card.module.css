@@ -1,0 +1,16 @@
+.host {
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: var(--button-contrast-gamma);
+  background-color: var(--contrast-alpha);
+}
+
+.image {
+  margin-bottom: 8px;
+}
+
+.title {
+  display: block;
+  margin-bottom: 8px;
+}
