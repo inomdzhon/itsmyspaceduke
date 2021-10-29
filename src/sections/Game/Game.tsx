@@ -39,7 +39,7 @@ export function Game() {
   const botLink = React.useMemo(() => {
     let parameters = '';
     if (selectedItem) {
-      parameters += `?interveiwType=${selectedItem.id}`;
+      parameters += `?start=${selectedItem.id}`;
     }
     return `${BOT_LINK}${parameters}`;
   }, [selectedItem]);
