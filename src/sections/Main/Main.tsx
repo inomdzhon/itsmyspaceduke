@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Button } from 'components/Button';
+import { ButtonBase } from 'components/ButtonBase';
 import { Typography } from 'components/Typography';
 
 import { useScrollTo } from 'shared/react';
@@ -16,8 +17,12 @@ export function Main() {
   return (
     <section className={styles.host}>
       <div className={styles.top}>
-        <img src={imageSpace307} alt="Logo of Space307 company" width={32} height={32} />
-        <img src={imageDataDuck} alt="Logo of DataDuck company" width={32} height={32} />
+        <ButtonBase component="a" href="https://space307.com" target="_blank" className={styles.link}>
+          <img src={imageSpace307} alt="Logo of Space307 company" width={32} height={32} />
+        </ButtonBase>
+        <ButtonBase component="a" href="https://dataduck.com" target="_blank" className={styles.link}>
+          <img src={imageDataDuck} alt="Logo of DataDuck company" width={32} height={32} />
+        </ButtonBase>
       </div>
       <div className={styles.bottom}>
         <Typography variant="h1" color="alpha" align="center" className={styles.title}>Ты в игре?</Typography>

@@ -62,7 +62,7 @@ export function Game() {
       ) : null}
       <Typography variant="h2" color={selectedItem ? 'warning' : "alpha"} align="center" className={styles.title}>{selectedItem ? selectedItem.title : 'Крути слоты'}</Typography>
       <Drum onUpdate={setSelectedItem} />
-      <Button component="a" href={botLink} color="accent" size="large" fullWidth className={classNames(styles.action, selectedItem && styles.action_visible)}>Перейти в бота</Button>
+      <Button component="a" href={botLink} target="_blank" color="accent" size="large" fullWidth className={classNames(styles.action, selectedItem && styles.action_visible)}>Хочу такой собес</Button>
     </section>
   );
 }

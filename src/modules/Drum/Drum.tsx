@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { ButtonBase } from 'components/ButtonBase';
 
-import { classNames } from 'shared/browser';
+import { classNames, reflow } from 'shared/browser';
 import { randomInt } from 'shared/lib';
 import type { TInterviewType } from 'shared/types';
 import { INTERVIEW_TYPES } from 'shared/constants';
@@ -35,10 +35,6 @@ export const Drum: React.FC<TDrumProps> = React.memo(({ className, onUpdate}) =>
   const handleClickStart = React.useCallback(() => {
     setSelectedItem(null);
     setStarted(true);
-    if (itemsRef.current) {
-      itemsRef.current.style.transition = 'none';
-      itemsRef.current.style.transform = 'translateY(0)';
-    }
   }, []);
 
   const handleSpinAnimationEnd = React.useCallback(() => {
@@ -57,6 +53,9 @@ export const Drum: React.FC<TDrumProps> = React.memo(({ className, onUpdate}) =>
       if (elSelectedItem) {
         const halfOfHeight = elSelectedItem.offsetHeight / 2;
         const y = -1 * (elSelectedItem.offsetTop - (halfOfHeight + ITEM_DELIMITER_OFFSET) - ITEM_OFFSET);
+        itemsRef.current.style.transition = 'none';
+        itemsRef.current.style.transform = `translateY(${y + 300}px)`;
+        reflow(itemsRef.current);
         itemsRef.current.style.transition = '';
         itemsRef.current.style.transform = `translateY(${y}px)`;
       }

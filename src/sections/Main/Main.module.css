@@ -41,6 +41,34 @@
   margin-bottom: 24px;
 }
 
+.link {
+  transition: opacity 200ms ease-in-out;
+}
+
+@media (pointer: fine) {
+  .link:hover {
+    opacity: 0.7;
+  }
+}
+
+.link:active {
+  opacity: 0.5
+}
+
+.link:focus-visible::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border: 1px solid var(--accent-alpha);
+  border-radius: 4px;
+  user-select: none;
+}
+
 .action {
   height: 56px;
   max-width: 240px;
